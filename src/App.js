@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import employeeData from './employeeData.json'; // Import the JSON data
+import employeeData from './employeeData.json';
 
 function App() {
   const [employees, setEmployees] = useState([]);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
 
   useEffect(() => {
-    setEmployees(employeeData.data); // Use the imported JSON data
+    setEmployees(employeeData.data);
   }, []);
 
   const handleEdit = (employee) => {
